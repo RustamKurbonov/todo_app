@@ -1,0 +1,37 @@
+.task__item {
+    padding: 15px;
+    position: relative;
+    transition: 0.5s;
+}
+.task__item:hover {
+    background-color: rgb(192, 202, 243);
+    transition: 0.5s;
+}
+.task__title-item {
+    font-size: 17px;
+    font-weight: 500;
+}
+.task__btn {
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+}
+.task__btn i {
+    font-size: 25px;
+}
+i.fa-check-circle-o {
+    color: green;
+}
+i.fa-times {
+    color: red;
+}
+.task__btn p {
+    margin-bottom: 0px;
+}
+.task__item.done {
+    background-color: rgb(189, 188, 188);
+    opacity: 0.6;
+}
+.task__item.done .task__title-item {
+    text-decoration: line-through;
+}
