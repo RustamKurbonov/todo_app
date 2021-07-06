@@ -6,7 +6,7 @@ class UpdateInput extends React.Component {
         super(props);
 
         this.state = {
-            input: '',
+            input: this.props.textTask,
             classVisibility: ''
         }
     }
@@ -30,7 +30,7 @@ class UpdateInput extends React.Component {
         const { input } = this.state;
         if(input){
             this.props.updateTask(input, this.props.id);
-            this.setState( { input: '', classVisibility: '' } );
+            this.setState( { classVisibility: '' } );
         }
     }
 

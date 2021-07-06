@@ -18,7 +18,7 @@ const Task = props => {
         <div className={doneStyle}>
             <div className='col-10 task__title-item'>{props.title}</div>
             <Button/>
-            <UpdateInput id={props.id} updateTask={props.updateTask} />
+            <UpdateInput id={props.id} updateTask={props.updateTask} textTask={props.title}/>
         </div>
     )
 }
